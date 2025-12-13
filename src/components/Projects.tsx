@@ -6,66 +6,44 @@ import { ExternalLink, Github, Code, Brain, BarChart3, Smartphone, FolderOpen } 
 
 export default function Projects() {
 const projects = {
-    software: [
-      {
-        title: 'CriandoSonhosLTDA',
-        description: 'Sistema completo para manutenção e gerenciamento de processos empresariais com interface moderna e funcionalidades avançadas.',
-        technologies: ['Python', 'Flask', 'SQLAlchemy'],
-        github: 'https://github.com/RafaelFreitas1009/CriandoSonhosLTDA',
-        type: 'Desenvolvimento de Software'
-      },
-      {
-        title: 'Gerenciador de Tarefas',
-        description: 'Aplicação web para organização e acompanhamento de tarefas pessoais e profissionais com interface intuitiva.',
-        technologies: ['Python', 'Streamlit'],
-        github: 'https://github.com/RafaelFreitas1009/Gerenciador_De_Tarefas',
-        type: 'Desenvolvimento de Software'
-      },
-      {
-        title: 'Vigilante-IA',
-        description: 'Sistema inteligente de monitoramento e vigilância utilizando tecnologias de visão computacional e IA.',
-        technologies: ['TypeScript', 'React', 'OpenCV', 'TensorFlow'],
-        github: 'https://github.com/RafaelFreitas1009/Vigilante-IA',
-        type: 'Inteligência Artificial'
-      }
-    ],
-    datascience: [
-      {
-        title: 'Inteligência Artificial Generativa',
-        description: 'Projeto de IA generativa utilizando técnicas avançadas para criação de conteúdo automatizado.',
-        technologies: ['Python', 'Gemini', 'Artificial Intelligence'],
-        github: 'https://github.com/RafaelFreitas1009/Inteligencia_Artificial',
-        type: 'Artificial Intelligence'
-      },
-      {
-        title: 'Machine Learning Project California Housing Prices Dataset',
-        description: 'Coleção de projetos de machine learning abordando diferentes algoritmos e técnicas de análise preditiva.',
-        technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
-        github: 'https://github.com/RafaelFreitas1009/ML',
-        type: 'Machine Learning'
-      },
-      {
-        title: 'Machine Learning Online Retail Dataset',
-        description: 'Projeto de análise de clientes e previsão de vendas utilizando o conjunto de dados Online Retail.',
-        technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib','K-Means Clustering','StandardScaler'],
-        github: 'https://github.com/RafaelFreitas1009/OnlineRetailData',
-        type: 'Machine Learning'
-      },
-      {
-        title: 'ML Aprendizado por Reforço',
-        description: 'Implementação de algoritmos de reinforcement learning para solução de problemas complexos de otimização.',
-        technologies: ['Python', 'Algoritsmos', 'NumPy'],
-        github: 'https://github.com/RafaelFreitas1009/ML_Aprendizado_Refor-o',
-        type: 'Reinforcement Learning'
-      },
-      {
-        title: 'Web Scraping',
-        description: 'Ferramentas e scripts para coleta automatizada de dados de diversas fontes web para análise posterior.',
-        technologies: ['Python', 'BeautifulSoup', 'Selenium', 'Pandas'],
-        github: 'https://github.com/RafaelFreitas1009/Web-scraping',
-        type: 'Data Collection'
-      }
-    ],
+  datascience: [
+    {
+      title: 'Inteligência Artificial Generativa',
+      description: 'Projeto de IA generativa utilizando técnicas avançadas para criação de conteúdo automatizado.',
+      technologies: ['Python', 'Gemini', 'Artificial Intelligence'],
+      github: 'https://github.com/RafaelFreitas1009/Inteligencia_Artificial',
+      type: 'Artificial Intelligence'
+    },
+    {
+      title: 'Machine Learning Project California Housing Prices Dataset',
+      description: 'Coleção de projetos de machine learning abordando diferentes algoritmos e técnicas de análise preditiva.',
+      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
+      github: 'https://github.com/RafaelFreitas1009/ML',
+      type: 'Machine Learning'
+    },
+    {
+      title: 'Machine Learning Online Retail Dataset',
+      description: 'Projeto de análise de clientes e previsão de vendas utilizando o conjunto de dados Online Retail.',
+      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib','K-Means Clustering','StandardScaler'],
+      github: 'https://github.com/RafaelFreitas1009/OnlineRetailData',
+      type: 'Machine Learning'
+    },
+    {
+      title: 'ML Aprendizado por Reforço',
+      description: 'Implementação de algoritmos de reinforcement learning para solução de problemas complexos de otimização.',
+      technologies: ['Python', 'Algoritsmos', 'NumPy'],
+      github: 'https://github.com/RafaelFreitas1009/ML_Aprendizado_Refor-o',
+      type: 'Reinforcement Learning'
+    },
+    {
+      title: 'Web Scraping',
+      description: 'Ferramentas e scripts para coleta automatizada de dados de diversas fontes web para análise posterior.',
+      technologies: ['Python', 'BeautifulSoup', 'Selenium', 'Pandas'],
+      github: 'https://github.com/RafaelFreitas1009/Web-scraping',
+      type: 'Data Collection'
+    }
+  ],
+    
     powerbi: [
       {
         title: 'Dashboard De Perfomance | Análise de Vendas Toy&Play',
@@ -102,7 +80,23 @@ const projects = {
         live: 'https://app.powerbi.com/view?r=eyJrIjoiMTg2NTQ1OTgtYjI5Yy00ZjcxLWFjZWQtODNhN2NmMmNmZTg3IiwidCI6IjliMzcwYzNlLTVhYWEtNGRiYS05NDdiLWM2OWFkMzE0Mzk2NiJ9',
         type: 'Business Intelligence'
       }
-    ]
+    ],
+    software: [
+      {
+        title: 'CriandoSonhosLTDA',
+        description: 'Sistema completo para manutenção e gerenciamento de processos empresariais com interface moderna e funcionalidades avançadas.',
+        technologies: ['Python', 'Flask', 'SQLAlchemy'],
+        github: 'https://github.com/RafaelFreitas1009/CriandoSonhosLTDA',
+        type: 'Desenvolvimento de Software'
+      },
+      {
+        title: 'Gerenciador de Tarefas',
+        description: 'Aplicação web para organização e acompanhamento de tarefas pessoais e profissionais com interface intuitiva.',
+        technologies: ['Python', 'Streamlit'],
+        github: 'https://github.com/RafaelFreitas1009/Gerenciador_De_Tarefas',
+        type: 'Desenvolvimento de Software'
+      },
+    ],
   };
 
   const categories = [
@@ -111,12 +105,6 @@ const projects = {
       label: 'Todos os Projetos',
       icon: FolderOpen,
       description: 'Visualizar todos os projetos'
-    },
-    {
-      id: 'software',
-      label: 'Desenvolvimento de Software',
-      icon: Code,
-      description: 'Aplicações web e sistemas'
     },
     {
       id: 'datascience',
@@ -129,6 +117,12 @@ const projects = {
       label: 'Dashboards Power BI',
       icon: BarChart3,
       description: 'Visualizações e relatórios'
+    },
+    {
+      id: 'software',
+      label: 'Desenvolvimento de Software',
+      icon: Code,
+      description: 'Aplicações web e sistemas'
     },
     {
       id: 'mobile',
