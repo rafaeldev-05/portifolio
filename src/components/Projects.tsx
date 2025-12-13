@@ -31,10 +31,24 @@ const projects = {
     ],
     datascience: [
       {
-        title: 'Machine Learning Projects',
+        title: 'Inteligência Artificial Generativa',
+        description: 'Projeto de IA generativa utilizando técnicas avançadas para criação de conteúdo automatizado.',
+        technologies: ['Python', 'Gemini', 'Artificial Intelligence'],
+        github: 'https://github.com/RafaelFreitas1009/Inteligencia_Artificial',
+        type: 'Artificial Intelligence'
+      },
+      {
+        title: 'Machine Learning Project California Housing Prices Dataset',
         description: 'Coleção de projetos de machine learning abordando diferentes algoritmos e técnicas de análise preditiva.',
         technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
         github: 'https://github.com/RafaelFreitas1009/ML',
+        type: 'Machine Learning'
+      },
+      {
+        title: 'Machine Learning Online Retail Dataset',
+        description: 'Projeto de análise de clientes e previsão de vendas utilizando o conjunto de dados Online Retail.',
+        technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib','K-Means Clustering','StandardScaler'],
+        github: 'https://github.com/RafaelFreitas1009/OnlineRetailData',
         type: 'Machine Learning'
       },
       {
