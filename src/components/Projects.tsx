@@ -40,7 +40,7 @@ const projects = {
       {
         title: 'ML Aprendizado por Reforço',
         description: 'Implementação de algoritmos de reinforcement learning para solução de problemas complexos de otimização.',
-        technologies: ['Python', 'TensorFlow', 'Gym', 'NumPy'],
+        technologies: ['Python', 'Algoritsmos', 'NumPy'],
         github: 'https://github.com/RafaelFreitas1009/ML_Aprendizado_Refor-o',
         type: 'Reinforcement Learning'
       },
@@ -72,6 +72,20 @@ const projects = {
         description: 'Dashboard para análise rápida e abrangente do desempenho de atendimento do laboratório, alinhando às metas de faturamento mensal e número de atendimentos.',
         technologies: ['Power BI', 'DAX', 'Power Query', 'SQL'],
         live: 'https://app.powerbi.com/view?r=eyJrIjoiNWEzMmJhN2UtMDVjNC00ZjY2LTkxZGQtMmU3NTVjNGE3NGEzIiwidCI6IjliMzcwYzNlLTVhYWEtNGRiYS05NDdiLWM2OWFkMzE0Mzk2NiJ9',
+        type: 'Business Intelligence'
+      },
+      {
+        title: 'Dashboard Metalurgica de Produção',
+        description: 'Dashboard para análise abrangente do desempenho produtivo de atendimento de uma indústria, fazendo análises bimestrais e análises What-If para compreensão de ROIs e criação de cenários',
+        technologies: ['Power BI', 'DAX', 'Power Query', 'Modeling'],
+        live: 'https://app.powerbi.com/view?r=eyJrIjoiOTY3YTEwMWEtNDZjZC00MjQzLWE2OTYtMDNmYTI4YzEzNmE0IiwidCI6IjliMzcwYzNlLTVhYWEtNGRiYS05NDdiLWM2OWFkMzE0Mzk2NiJ9',
+        type: 'Business Intelligence'
+      },
+      {
+        title: 'E-commerce | Olist',
+        description: 'Dashboard para análise abrangente do desempenho de uma e-commerce, trabalhando com análise de pagamentos e faturamentos, logística e análises de clientes analisando indicadores como: RFM e NPS).',
+        technologies: ['Power BI', 'DAX', 'Power Query', 'SQL'],
+        live: 'https://app.powerbi.com/view?r=eyJrIjoiMTg2NTQ1OTgtYjI5Yy00ZjcxLWFjZWQtODNhN2NmMmNmZTg3IiwidCI6IjliMzcwYzNlLTVhYWEtNGRiYS05NDdiLWM2OWFkMzE0Mzk2NiJ9',
         type: 'Business Intelligence'
       }
     ]
