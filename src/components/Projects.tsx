@@ -56,21 +56,21 @@ const projects = {
       {
         title: 'Dashboard De Perfomance | Análise de Vendas Toy&Play',
         description: 'Dashboard prático e funcional que entrega insights valiosos com rapidez, análises dinâmicas para reduzir custos, análise de sazonalidade do faturamento e estratégias de vendas.',
-        technologies: ['Power BI', 'DAX', 'Power Query', 'SQL'],
+        technologies: ['Power BI', 'DAX', 'Power Query', 'Modeling'],
         live: 'https://app.powerbi.com/view?r=eyJrIjoiMTkzMzlkYzEtMjZkNC00NTQ1LWE4MzktZjg0ODIwODhmYWYyIiwidCI6ImRkM2YyODY3LTA1N2EtNDdmNi05ZThiLTlmMDM2YTQ5NjYzOCJ9',
         type: 'Business Intelligence'
       },
       {
         title: 'Dashboard De Perfomance | Análise de Vendas',
         description: 'Dashboard para Vertex Tennis com insights profundos para tomada de decisões baseadas em dados, identificação de oportunidades de expansão e análises estratégicas.',
-        technologies: ['Power BI', 'DAX', 'Power Query', 'SQL'],
+        technologies: ['Power BI', 'DAX', 'Power Query', 'Analytics'],
         live: 'https://app.powerbi.com/view?r=eyJrIjoiNjhmYjFhNGEtYjZkZC00NzRkLTlhZTktMTY2MzI1MjFmM2ZmIiwidCI6IjliMzcwYzNlLTVhYWEtNGRiYS05NDdiLWM2OWFkMzE0Mzk2NiJ9',
         type: 'Business Intelligence'
       },
       {
         title: 'Dashboard De Perfomance de Atendimento | HEALTHLAB',
         description: 'Dashboard para análise rápida e abrangente do desempenho de atendimento do laboratório, alinhando às metas de faturamento mensal e número de atendimentos.',
-        technologies: ['Power BI', 'DAX', 'Power Query', 'SQL'],
+        technologies: ['Power BI', 'DAX', 'Power Query', 'Analytics'],
         live: 'https://app.powerbi.com/view?r=eyJrIjoiNWEzMmJhN2UtMDVjNC00ZjY2LTkxZGQtMmU3NTVjNGE3NGEzIiwidCI6IjliMzcwYzNlLTVhYWEtNGRiYS05NDdiLWM2OWFkMzE0Mzk2NiJ9',
         type: 'Business Intelligence'
       },
