@@ -16,22 +16,22 @@ const projects = {
     },
     {
       title: 'Machine Learning Project California Housing Prices Dataset',
-      description: 'Coleção de projetos de machine learning abordando diferentes algoritmos e técnicas de análise preditiva.',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
+      description: 'Implementação de modelos preditivos otimizados, otimização de hiperparâmetros e validação de modelos.',
+      technologies: ['Python', 'Scikit-learn', 'Feature Engineering', 'Matplotlib'],
       github: 'https://github.com/RafaelFreitas1009/ML',
       type: 'Machine Learning'
     },
     {
       title: 'Machine Learning Online Retail Dataset',
       description: 'Projeto de análise de clientes e previsão de vendas utilizando o conjunto de dados Online Retail.',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib','K-Means Clustering','StandardScaler'],
+      technologies: ['Python', 'Scikit-learn', 'Feature Engineering', 'Matplotlib','K-Means Clustering','StandardScaler'],
       github: 'https://github.com/RafaelFreitas1009/OnlineRetailData',
       type: 'Machine Learning'
     },
     {
       title: 'ML Aprendizado por Reforço',
       description: 'Implementação de algoritmos de reinforcement learning para solução de problemas complexos de otimização.',
-      technologies: ['Python', 'Algoritsmos', 'NumPy'],
+      technologies: ['Python', 'Algoritmos', 'NumPy'],
       github: 'https://github.com/RafaelFreitas1009/ML_Aprendizado_Refor-o',
       type: 'Reinforcement Learning'
     },
