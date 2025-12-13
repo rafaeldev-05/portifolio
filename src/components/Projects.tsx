@@ -34,7 +34,7 @@ const projects = {
         title: 'Machine Learning Projects',
         description: 'Coleção de projetos de machine learning abordando diferentes algoritmos e técnicas de análise preditiva.',
         technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
-        github: 'https://github.com/RafaelFreitas1009/machine_learning',
+        github: 'https://github.com/RafaelFreitas1009/ML',
         type: 'Machine Learning'
       },
       {
