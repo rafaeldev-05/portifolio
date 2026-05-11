@@ -9,7 +9,6 @@ import Footer from '@/components/Footer';
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
 
-  // Handle navigation
   const handleNavigate = (section: string) => {
     setActiveSection(section);
     const element = document.getElementById(section);
@@ -18,7 +17,6 @@ const Index = () => {
     }
   };
 
-  // Update active section based on scroll position
   useEffect(() => {
     const sections = ['home', 'about', 'projects', 'contact'];
     

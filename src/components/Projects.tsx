@@ -4,6 +4,15 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ExternalLink, Github, Code, Brain, BarChart3, Smartphone, FolderOpen } from 'lucide-react';
 
+type Project = {
+  title: string;
+  description: string;
+  technologies: string[];
+  type: string;
+  github?: string;
+  live?: string;
+};
+
 export default function Projects() {
 const projects = {
   datascience: [
@@ -11,35 +20,35 @@ const projects = {
       title: 'Inteligência Artificial Generativa',
       description: 'Projeto de IA generativa utilizando técnicas avançadas para criação de conteúdo automatizado.',
       technologies: ['Python', 'Gemini', 'Artificial Intelligence'],
-      github: 'https://github.com/RafaelFreitas1009/Inteligencia_Artificial',
+      github: 'https://github.com/rafaeldev-05/Inteligencia_Artificial',
       type: 'Artificial Intelligence'
     },
     {
       title: 'Machine Learning Project California Housing Prices Dataset',
       description: 'Implementação de modelos preditivos otimizados, otimização de hiperparâmetros e validação de modelos.',
       technologies: ['Python', 'Scikit-learn', 'Feature Engineering', 'Matplotlib'],
-      github: 'https://github.com/RafaelFreitas1009/ML',
+      github: 'https://github.com/rafaeldev-05/ML',
       type: 'Machine Learning'
     },
     {
       title: 'Machine Learning Online Retail Dataset',
       description: 'Projeto de análise de clientes e previsão de vendas utilizando o conjunto de dados Online Retail.',
       technologies: ['Python', 'Scikit-learn', 'Feature Engineering', 'Matplotlib','K-Means Clustering','StandardScaler'],
-      github: 'https://github.com/RafaelFreitas1009/OnlineRetailData',
+      github: 'https://github.com/rafaeldev-05/OnlineRetailData',
       type: 'Machine Learning'
     },
     {
       title: 'ML Aprendizado por Reforço',
       description: 'Implementação de algoritmos de reinforcement learning para solução de problemas complexos de otimização.',
       technologies: ['Python', 'Algoritmos', 'NumPy'],
-      github: 'https://github.com/RafaelFreitas1009/ML_Aprendizado_Refor-o',
+      github: 'https://github.com/rafaeldev-05/ML_Aprendizado_Refor-o',
       type: 'Reinforcement Learning'
     },
     {
       title: 'Web Scraping',
       description: 'Ferramentas e scripts para coleta automatizada de dados de diversas fontes web para análise posterior.',
       technologies: ['Python', 'BeautifulSoup', 'Selenium', 'Pandas'],
-      github: 'https://github.com/RafaelFreitas1009/Web-scraping',
+      github: 'https://github.com/rafaeldev-05/Web-scraping',
       type: 'Data Collection'
     }
   ],
@@ -86,14 +95,14 @@ const projects = {
         title: 'CriandoSonhosLTDA',
         description: 'Sistema completo para manutenção e gerenciamento de processos empresariais com interface moderna e funcionalidades avançadas.',
         technologies: ['Python', 'Flask', 'SQLAlchemy'],
-        github: 'https://github.com/RafaelFreitas1009/CriandoSonhosLTDA',
+        github: 'https://github.com/rafaeldev-05/CriandoSonhosLTDA',
         type: 'Desenvolvimento de Software'
       },
       {
         title: 'Gerenciador de Tarefas',
         description: 'Aplicação web para organização e acompanhamento de tarefas pessoais e profissionais com interface intuitiva.',
         technologies: ['Python', 'Streamlit'],
-        github: 'https://github.com/RafaelFreitas1009/Gerenciador_De_Tarefas',
+        github: 'https://github.com/rafaeldev-05/Gerenciador_De_Tarefas',
         type: 'Desenvolvimento de Software'
       },
     ],
@@ -134,7 +143,7 @@ const projects = {
 
   const allProjects = [...projects.software, ...projects.datascience, ...projects.powerbi];
 
-  const ProjectCard = ({ project }: { project: any }) => (
+  const ProjectCard = ({ project }: { project: Project }) => (
     <Card className="group shadow-portfolio hover:shadow-portfolio-glow transition-all duration-300 hover:scale-105">
       <CardHeader>
         <div className="flex items-start justify-between">
@@ -153,7 +162,6 @@ const projects = {
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {/* Technologies */}
           <div>
             <h4 className="text-sm font-medium text-foreground mb-2">🧪 Tecnologias:</h4>
             <div className="flex flex-wrap gap-2">
@@ -165,7 +173,6 @@ const projects = {
             </div>
           </div>
 
-          {/* Links */}
           <div className="flex gap-2 pt-2">
             {project.github && (
               <Button size="sm" variant="outline" asChild>
@@ -202,7 +209,6 @@ const projects = {
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Meus Projetos
@@ -213,7 +219,6 @@ const projects = {
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          {/* Categories */}
           <TabsList className="grid grid-cols-2 lg:grid-cols-5 w-full mb-12 h-auto p-1">
             {categories.map((category) => (
               <TabsTrigger 
@@ -229,7 +234,6 @@ const projects = {
             ))}
           </TabsList>
 
-          {/* All Projects */}
           <TabsContent value="all" className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {allProjects.map((project, index) => (
@@ -238,7 +242,6 @@ const projects = {
             </div>
           </TabsContent>
 
-          {/* Software Development */}
           <TabsContent value="software" className="space-y-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -255,7 +258,6 @@ const projects = {
             </div>
           </TabsContent>
 
-          {/* Data Science */}
           <TabsContent value="datascience" className="space-y-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -272,7 +274,6 @@ const projects = {
             </div>
           </TabsContent>
 
-          {/* Power BI */}
           <TabsContent value="powerbi" className="space-y-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -289,7 +290,6 @@ const projects = {
             </div>
           </TabsContent>
 
-          {/* Mobile Apps - Placeholder */}
           <TabsContent value="mobile" className="space-y-8">
             <div className="text-center py-16">
               <Smartphone className="h-16 w-16 mx-auto text-muted-foreground mb-4" />
@@ -304,7 +304,6 @@ const projects = {
           </TabsContent>
         </Tabs>
 
-        {/* Call to Action */}
         <div className="text-center mt-16">
           <Card className="shadow-portfolio bg-portfolio-gradient text-white">
             <CardContent className="p-8">

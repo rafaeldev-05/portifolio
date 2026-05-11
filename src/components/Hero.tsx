@@ -9,17 +9,14 @@ interface HeroProps {
 export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-portfolio-gradient">
-      {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary/20 via-transparent to-portfolio-secondary/20" />
       
-      {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-portfolio-secondary/20 rounded-full animate-float" />
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-portfolio-primary/20 rounded-full animate-float" style={{animationDelay: '2s'}} />
       <div className="absolute top-1/2 left-5 w-16 h-16 bg-portfolio-secondary/30 rounded-full animate-float" style={{animationDelay: '4s'}} />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
@@ -66,7 +63,6 @@ export default function Hero({ onNavigate }: HeroProps) {
             </div>
           </div>
 
-          {/* Profile Image */}
           <div className="flex-shrink-0 animate-slide-up">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-portfolio-glow ring-4 ring-white/20">
@@ -77,13 +73,11 @@ export default function Hero({ onNavigate }: HeroProps) {
                 />
               </div>
               
-              {/* Decorative Ring */}
               <div className="absolute -inset-4 rounded-full border-2 border-white/30 animate-spin" style={{animationDuration: '20s'}} />
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={() => onNavigate('about')}

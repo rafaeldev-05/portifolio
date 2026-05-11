@@ -37,7 +37,6 @@ export default function About() {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Sobre Mim
@@ -47,7 +46,6 @@ export default function About() {
             </p>
           </div>
 
-          {/* Bio */}
           <div className="mb-16 animate-slide-up">
             <Card className="shadow-portfolio">
               <CardContent className="p-8">
@@ -69,7 +67,6 @@ export default function About() {
             </Card>
           </div>
 
-          {/* Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {highlights.map((item, index) => (
               <Card key={index} className="shadow-portfolio hover:shadow-portfolio-glow transition-all duration-300 hover:scale-105">
@@ -92,7 +89,6 @@ export default function About() {
             ))}
           </div>
 
-          {/* Skills */}
           <div className="space-y-8 animate-slide-up">
             <h3 className="text-2xl font-bold text-center text-foreground mb-8">
               🚀 Tecnologias & Ferramentas

@@ -8,7 +8,6 @@ export default function Footer() {
     <footer className="bg-portfolio-dark text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand & Bio */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-white">
               Rafael Freitas
@@ -20,7 +19,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" className="text-white hover:text-portfolio-secondary" asChild>
                 <a 
-                  href="https://github.com/RafaelFreitas1009" 
+                  href="https://github.com/rafaeldev-05"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -49,7 +48,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">
               Links Rápidos
@@ -78,7 +76,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">
               Contato

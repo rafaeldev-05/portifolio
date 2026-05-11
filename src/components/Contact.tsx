@@ -31,7 +31,7 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/RafaelFreitas1009',
+      href: 'https://github.com/rafaeldev-05',
       color: 'hover:text-gray-800',
       description: 'Veja meus repositórios'
     },
@@ -48,7 +48,6 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               📞 Entre em Contato
@@ -59,7 +58,6 @@ export default function Contact() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Contact Information */}
             <div className="space-y-6 animate-slide-up">
               <Card className="shadow-portfolio">
                 <CardHeader>
@@ -93,7 +91,6 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              {/* Social Media */}
               <Card className="shadow-portfolio">
                 <CardHeader>
                   <CardTitle className="text-portfolio-primary">
@@ -129,7 +126,6 @@ export default function Contact() {
               </Card>
             </div>
 
-            {/* CTA Section */}
             <div className="space-y-6 animate-slide-up" style={{animationDelay: '200ms'}}>
               <Card className="shadow-portfolio bg-portfolio-gradient text-white">
                 <CardHeader>
@@ -192,7 +188,6 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              {/* Quote */}
               <Card className="shadow-portfolio">
                 <CardContent className="p-6">
                   <blockquote className="text-center">
@@ -208,7 +203,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Bottom CTA */}
           <div className="text-center mt-16">
             <Card className="shadow-portfolio">
               <CardContent className="p-8">
